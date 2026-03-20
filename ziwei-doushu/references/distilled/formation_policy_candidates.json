@@ -1,0 +1,74 @@
+{
+  "status": "stable",
+  "families": {
+    "formation.zifutonggong": {
+      "family": "財福穩定",
+      "secondary_family": "富貴權位",
+      "score": 0.89,
+      "confidence": "high",
+      "drivers": ["star_duty", "structural_closure", "wealth_stability", "auxiliary_support", "case_support"],
+      "case_support": ["validation.case.004", "validation.case.007", "validation.case.011", "validation.case.012"]
+    },
+    "formation.jixiangliming": {
+      "family": "富貴權位",
+      "score": 0.74,
+      "confidence": "medium_high",
+      "drivers": ["star_duty", "positional_privilege", "cross_text_echo"]
+    },
+    "formation.yangliangchanglu": {
+      "family": "功名公職",
+      "score": 0.90,
+      "confidence": "high",
+      "drivers": ["star_duty", "structural_closure", "cross_text_echo"]
+    },
+    "formation.jiyuetongliang": {
+      "family": "功名公職",
+      "score": 0.86,
+      "confidence": "high",
+      "drivers": ["star_duty", "structural_closure", "semantic_convergence"]
+    },
+    "formation.yuelangtianmen": {
+      "family": "財福穩定",
+      "score": 0.74,
+      "confidence": "medium_high",
+      "drivers": ["positional_privilege", "star_duty"],
+      "needs_raw_backfill": ["太陰更多入宮條目"]
+    },
+    "formation.rizhaoleimen": {
+      "family": "富貴權位",
+      "score": 0.74,
+      "confidence": "medium_high",
+      "drivers": ["star_duty", "positional_privilege", "case_support"],
+      "case_support": ["validation.case.005", "validation.case.006"],
+      "needs_raw_backfill": ["卯位理據", "更多日月權位案例"]
+    },
+    "formation.ludaomadao": {
+      "family": "破敗奔波",
+      "score": 0.91,
+      "confidence": "high",
+      "drivers": ["structural_closure", "negative_transformation", "mobility_breakdown", "void_interruption"],
+      "needs_raw_backfill": ["截空與截路術語對應校對"]
+    },
+    "formation.juhuoyang": {
+      "family": "是非刑險",
+      "score": 0.80,
+      "confidence": "medium_high",
+      "drivers": ["malefic_convergence", "negative_semantics"],
+      "needs_raw_backfill": ["火羊交會與入宮條目"]
+    },
+    "formation.lingchangtuowu": {
+      "family": "是非刑險",
+      "score": 0.79,
+      "confidence": "medium",
+      "drivers": ["malefic_convergence", "financial_breakdown", "literary_star_reversal"],
+      "needs_raw_backfill": ["鈴陀與文昌武曲交會條目"]
+    },
+    "formation.mingwuzhengyao": {
+      "family": "結構缺失",
+      "score": 0.69,
+      "confidence": "medium_high",
+      "drivers": ["structural_absence", "case_support"],
+      "case_support": ["validation.case.015"]
+    }
+  }
+}

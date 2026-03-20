@@ -1,0 +1,169 @@
+{
+  "status": "stable",
+  "version": "2026-03-19",
+  "runtime_policy": "raw_first",
+  "source_files": {
+    "sihua": "distilled/sihua_policy_candidates.json",
+    "formations": "distilled/formation_policy_candidates.json",
+    "palaces": "distilled/palace_mapping.json",
+    "terms": "distilled/term_normalization_map.json",
+    "mechanism_branches": "distilled/mechanism_branches.json",
+    "runtime_policy": "distilled/runtime_policy.json",
+    "star_vectors": "distilled/star_semantic_vectors.json",
+    "traceability": "distilled/traceability_index.json",
+    "output_contract": "distilled/output_contract.json"
+  },
+  "core": {
+    "trigger_stack_family": "limit_layers",
+    "preferred_language": "zh-Hant",
+    "citation_mode": "source_id_first"
+  },
+  "sihua": {
+    "default_policy": "raw_first",
+    "resolved_groups": {
+      "sihua.wu": {
+        "claim": "貪狼祿 太陰權 右弼科 天機忌",
+        "confidence": "medium_high",
+        "source_ids": ["lyric.sihua.002"]
+      },
+      "sihua.geng": {
+        "claim": "太陽祿 武曲權 太陰科 天同忌",
+        "confidence": "medium",
+        "source_ids": ["lyric.sihua.003"]
+      },
+      "sihua.ren": {
+        "claim": "天梁祿 紫微權 左輔科 武曲忌",
+        "confidence": "medium_high",
+        "source_ids": ["lyric.sihua.004", "star.wuqu.003"]
+      }
+    }
+  },
+  "formations": {
+    "high_confidence_families": {
+      "formation.yangliangchanglu": {
+        "family": "功名公職",
+        "score": 0.90,
+        "confidence": "high"
+      },
+      "formation.jiyuetongliang": {
+        "family": "功名公職",
+        "score": 0.86,
+        "confidence": "high"
+      },
+      "formation.ludaomadao": {
+        "family": "破敗奔波",
+        "score": 0.91,
+        "confidence": "high"
+      },
+      "formation.zifutonggong": {
+        "family": "財福穩定",
+        "score": 0.89,
+        "confidence": "high",
+        "case_support": ["validation.case.004", "validation.case.007", "validation.case.011", "validation.case.012"]
+      },
+      "formation.rizhaoleimen": {
+        "family": "富貴權位",
+        "score": 0.74,
+        "confidence": "medium_high",
+        "case_support": ["validation.case.005", "validation.case.006"]
+      },
+      "formation.mingwuzhengyao": {
+        "family": "結構缺失",
+        "score": 0.69,
+        "confidence": "medium_high",
+        "case_support": ["validation.case.015"]
+      }
+    }
+  },
+  "palaces": {
+    "primary_axes": {
+      "命宮": ["身宮", "財帛宮", "官祿宮", "遷移宮"],
+      "財帛宮": ["命宮", "官祿宮", "田宅宮"],
+      "官祿宮": ["命宮", "財帛宮", "夫妻宮"],
+      "遷移宮": ["命宮", "財帛宮", "官祿宮"]
+    }
+  },
+  "term_families": {
+    "limit_layers": {
+      "type": "trigger_stack",
+      "aliases": ["大限", "小限", "太歲", "流年"],
+      "resolved": true
+    },
+    "void_blockers": {
+      "type": "disruptor_family",
+      "aliases": ["空亡", "天空", "旬空", "截空"],
+      "related_terms": ["截路", "空劫"],
+      "resolved": false
+    },
+    "trap_spaces": {
+      "type": "spatial_hazard",
+      "aliases": ["天羅", "地網", "夾地", "虛絕", "絕地"],
+      "resolved": true
+    },
+    "blade_malefics": {
+      "type": "malefic_family",
+      "aliases": ["擎羊", "陀羅", "流羊", "流陀", "羊刃"],
+      "resolved": true
+    },
+    "mourning_signals": {
+      "type": "omen_family",
+      "aliases": ["喪門", "白虎", "天哭", "病符"],
+      "resolved": true
+    },
+    "injury_env": {
+      "type": "hazard_family",
+      "aliases": ["天傷", "天使"],
+      "resolved": true
+    },
+    "delayed_success": {
+      "type": "outcome_pattern",
+      "aliases": ["先貧後富", "先抑後揚", "三十六後遂志", "三十五後方得遂志"],
+      "resolved": true
+    },
+    "structural_deficit": {
+      "type": "structural_pattern",
+      "aliases": ["無正曜", "帶空", "怯劫", "主體缺位"],
+      "resolved": true
+    },
+    "mobility_breakers": {
+      "type": "movement_hazard",
+      "aliases": ["沉馬", "馬頭帶箭"],
+      "related_terms": ["祿馬交馳", "亡馬", "折足馬"],
+      "resolved": false
+    }
+  },
+  "mechanisms": {
+    "neg.break_wealth_flow": {
+      "linked_formations": ["formation.ludaomadao"],
+      "trigger_families": ["void_blockers", "mobility_breakers"],
+      "core_terms": ["祿存", "天馬"],
+      "raw_support": ["formation.ludaomadao.001", "formation.lumajiaochi.001", "formation.lumajiaochi.002", "formation.maluokongwang.001", "star.tianma.002", "quanshu.v3.tanxing.001"],
+      "confidence": "medium_high",
+      "status": "raw_strong_case_weak"
+    },
+    "neg.limit_collision": {
+      "trigger_stack_family": "limit_layers",
+      "amplifier_families": ["trap_spaces", "injury_env", "mourning_signals", "blade_malefics", "void_blockers"],
+      "branches": {
+        "fatal": {
+          "example_cases": ["case.quanshu.v4.001", "case.quanshu.v4.009", "case.quanshu.v4.019", "case.quanshu.v4.020", "case.quanshu.v4.023"]
+        },
+        "nonfatal": {
+          "example_cases": ["case.quanshu.v4.025", "case.quanshu.v4.028"]
+        },
+        "delayed_success": {
+          "example_cases": ["case.quanshu.v4.013", "case.quanshu.v4.026"]
+        },
+        "structural_deficit": {
+          "example_cases": ["case.quanshu.v4.029"]
+        }
+      },
+      "confidence": "high"
+    }
+  },
+  "open_items": [
+    "截空 與 截路 尚未完全裁決同義",
+    "neg.break_wealth_flow 雖已補強 direct raw，但仍缺純祿馬受阻案例",
+    "formation scores 尚未全部回寫 case-derived deltas"
+  ]
+}

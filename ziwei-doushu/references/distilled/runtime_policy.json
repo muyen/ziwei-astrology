@@ -1,0 +1,43 @@
+{
+  "status": "stable",
+  "default_mode": "research",
+  "lookup_order": [
+    "distilled/mapping.json",
+    "distilled/term_normalization_map.json",
+    "distilled/traceability_index.json",
+    "distilled/output_contract.json",
+    "distilled/palace_mapping.json",
+    "distilled/sihua_policy_candidates.json",
+    "distilled/formation_policy_candidates.json",
+    "classical_texts/*",
+    "raw_corpus/*"
+  ],
+  "modes": {
+    "research": {
+      "description": "優先顯示原始依據、衝突、未裁決點與 source ids。",
+      "citation_mode": "required",
+      "fallback_to_raw": true,
+      "allow_inference": true
+    },
+    "chart_reading": {
+      "description": "優先輸出可執行解讀，但若 confidence 不足仍要回退 raw 層。",
+      "citation_mode": "optional_but_preferred",
+      "fallback_to_raw": true,
+      "allow_inference": true
+    }
+  },
+  "fallback_rules": {
+    "unresolved_term_family": "return_to_raw",
+    "low_confidence_mapping": "return_to_raw",
+    "conflicting_sihua_group": "state_selected_version_and_alternatives",
+    "missing_case_support": "keep_provisional"
+  },
+  "output_layers": ["原文", "抽取", "推論"],
+  "citation_rules": {
+    "research": "must_include_source_ids",
+    "chart_reading": "include_source_ids_when_material",
+    "source_priority": ["raw_corpus", "classical_texts", "analysis", "distilled"],
+    "traceability_index": "distilled/traceability_index.json"
+  },
+  "output_contract": "distilled/output_contract.json"
+}

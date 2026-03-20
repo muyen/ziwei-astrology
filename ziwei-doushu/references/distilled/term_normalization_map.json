@@ -1,0 +1,78 @@
+{
+  "status": "stable",
+  "source": "analysis/term_normalization.md",
+  "families": {
+    "limit_layers": {
+      "type": "trigger_stack",
+      "aliases": ["大限", "小限", "太歲", "流年"],
+      "resolved": true,
+      "mapping_role": "trigger_layer",
+      "notes": "同屬應期層，但需保留 layer_order。"
+    },
+    "void_blockers": {
+      "type": "disruptor_family",
+      "aliases": ["空亡", "天空", "旬空", "截空"],
+      "related_terms": ["截路", "空劫"],
+      "resolved": false,
+      "mapping_role": "disruptor",
+      "notes": "截路現已有 primary raw，但與截空仍未完全裁決同義；空劫相關但不可硬併。"
+    },
+    "trap_spaces": {
+      "type": "spatial_hazard",
+      "aliases": ["天羅", "地網", "夾地", "虛絕", "絕地"],
+      "resolved": true,
+      "mapping_role": "amplifier",
+      "notes": "常作為 limit_collision 的空間性放大器。"
+    },
+    "blade_malefics": {
+      "type": "malefic_family",
+      "aliases": ["擎羊", "陀羅", "流羊", "流陀", "羊刃"],
+      "resolved": true,
+      "mapping_role": "malefic_trigger",
+      "notes": "同家族，但需保留 natal_vs_transit distinction。"
+    },
+    "mourning_signals": {
+      "type": "omen_family",
+      "aliases": ["喪門", "白虎", "天哭", "病符"],
+      "resolved": true,
+      "mapping_role": "event_risk",
+      "notes": "傾向映射到喪傷、疾病、哭泣前兆，不獨立成 formation。"
+    },
+    "injury_env": {
+      "type": "hazard_family",
+      "aliases": ["天傷", "天使"],
+      "resolved": true,
+      "mapping_role": "amplifier",
+      "notes": "常與夾地、天空、太歲聯動。"
+    },
+    "delayed_success": {
+      "type": "outcome_pattern",
+      "aliases": ["先貧後富", "先抑後揚", "三十六後遂志", "三十五後方得遂志"],
+      "resolved": true,
+      "mapping_role": "outcome_branch",
+      "notes": "屬 nonfatal 子類，不可和 fatal 事件混判。"
+    },
+    "structural_deficit": {
+      "type": "structural_pattern",
+      "aliases": ["無正曜", "帶空", "怯劫", "主體缺位"],
+      "resolved": true,
+      "mapping_role": "outcome_branch",
+      "notes": "不是高格翻盤，而是本體先天不足。"
+    },
+    "mobility_breakers": {
+      "type": "movement_hazard",
+      "aliases": ["沉馬", "馬頭帶箭"],
+      "related_terms": ["祿馬交馳", "亡馬", "折足馬"],
+      "resolved": false,
+      "mapping_role": "mobility_risk",
+      "notes": "後續需與天馬 family 併看。"
+    }
+  },
+  "mechanism_branches": {
+    "neg.limit_collision": {
+      "current_branching": ["fatal", "nonfatal", "delayed_success", "structural_deficit"],
+      "status": "emerging",
+      "notes": "已由 case_validation.md 支持，但尚未全面量化。"
+    }
+  }
+}

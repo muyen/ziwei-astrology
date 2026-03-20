@@ -1,0 +1,117 @@
+{
+  "status": "stable",
+  "version": "2026-03-19",
+  "entries": {
+    "sihua.wu": {
+      "type": "sihua_group",
+      "source_ids": ["lyric.sihua.002"],
+      "notes": "Primary raw support currently strongest for 戊幹."
+    },
+    "sihua.geng": {
+      "type": "sihua_group",
+      "source_ids": ["lyric.sihua.003"],
+      "notes": "庚幹 still has compare-layer tension; raw-first currently favors 太陰科."
+    },
+    "sihua.ren": {
+      "type": "sihua_group",
+      "source_ids": ["lyric.sihua.004", "star.wuqu.003"],
+      "notes": "壬幹 has the strongest role-fit plus pair symmetry among current conflict groups."
+    },
+    "formation.zifutonggong": {
+      "type": "formation",
+      "source_ids": ["formation.zifutonggong.001", "lyric.gusui.001", "quanshu.v1.fawei.002"],
+      "case_support": ["validation.case.004", "validation.case.007", "validation.case.011", "validation.case.012"]
+    },
+    "formation.rizhaoleimen": {
+      "type": "formation",
+      "source_ids": ["formation.rizhaoleimen.001", "quanshu.v1.xingyuan.002"],
+      "case_support": ["validation.case.005", "validation.case.006"]
+    },
+    "formation.mingwuzhengyao": {
+      "type": "formation",
+      "source_ids": ["formation.mingwuzhengyao.001", "quanshu.v1.fawei.002", "quanshu.v3.tanxing.005"],
+      "case_support": ["validation.case.015"]
+    },
+    "neg.limit_collision": {
+      "type": "mechanism",
+      "source_ids": ["quanshu.v3.dayun.002", "quanshu.v3.dayun.003", "quanshu.v3.taisui.002", "quanshu.v3.taisui.003", "quanshu.v3.yangtuo.001", "quanshu.v3.qisha.001"],
+      "case_support": ["validation.case.001", "validation.case.002", "validation.case.009", "validation.case.011", "validation.case.012", "validation.case.013", "validation.case.016"]
+    },
+    "neg.break_wealth_flow": {
+      "type": "mechanism",
+      "source_ids": ["formation.ludaomadao.001", "lyric.taiwei.004", "star.lucun.001", "star.lucun.003", "star.tianma.001", "star.tianma.002", "star.kongjie.001", "quanshu.v3.tanxing.001"],
+      "case_support": ["validation.case.005"],
+      "notes": "Currently still mostly theory-backed; case support is partial and indirect."
+    },
+    "limit_layers": {
+      "type": "term_family",
+      "source_ids": ["quanshu.v3.dayun.002", "quanshu.v3.dayun.003", "quanshu.v3.taisui.002", "quanshu.v3.taisui.003"],
+      "case_support": ["case.quanshu.v4.001", "case.quanshu.v4.015", "case.quanshu.v4.020", "case.quanshu.v4.023"]
+    },
+    "void_blockers": {
+      "type": "term_family",
+      "source_ids": ["quanshu.v3.tanxing.001", "quanshu.v3.dayun.003", "lead.jiekong.001", "lead.jiekong.002", "lead.kongwang.001"],
+      "case_support": ["case.quanshu.v4.009", "case.quanshu.v4.020", "case.quanshu.v4.024"]
+    },
+    "structural_deficit": {
+      "type": "term_family",
+      "source_ids": ["quanshu.v3.tanxing.005", "formation.mingwuzhengyao.001"],
+      "case_support": ["case.quanshu.v4.029", "validation.case.015"]
+    },
+    "palace.命宮": {
+      "type": "palace_mapping",
+      "source_ids": ["quanshu.v1.fawei.002", "quanshu.v3.tanxing.002", "quanshu.v3.tanxing.005"],
+      "notes": "命宮在 runtime 中作主體核心，並聯三方四正與身宮。"
+    },
+    "palace.官祿宮": {
+      "type": "palace_mapping",
+      "source_ids": ["quanshu.v3.tanxing.002", "quanshu.v2.guanlu.001", "quanshu.v2.guanlu.002", "quanshu.v2.guanlu.003"],
+      "notes": "官祿宮映射到功名、職業、學業與社會成就。"
+    },
+    "output_contract.research": {
+      "type": "runtime_contract",
+      "source_ids": ["norm.001", "norm.002", "term.use.001"],
+      "notes": "研究模式要求原文、抽取、推論與 source ids 全部顯式出現。"
+    },
+    "output_contract.chart_reading": {
+      "type": "runtime_contract",
+      "source_ids": ["norm.001", "norm.003", "term.use.001"],
+      "notes": "解盤模式允許較簡潔輸出，但低信心與衝突時仍需回 source ids。"
+    },
+    "star.tanlang": {
+      "type": "star_vector",
+      "source_ids": ["lyric.sihua.002", "star.tanlang.001"],
+      "notes": "北斗星，木行，化氣為善。主桃花慾望與多才多藝。戊幹化祿主星。"
+    },
+    "star.qisha": {
+      "type": "star_vector",
+      "source_ids": ["lyric.gusui.001", "star.qisha.001"],
+      "notes": "南斗星，火金行，化氣為權。主武勇決斷，帶孤克之性。"
+    },
+    "star.pojun": {
+      "type": "star_vector",
+      "source_ids": ["lyric.sihua.001", "quanshu.v2.caibo.003", "star.pojun.001"],
+      "notes": "北斗星，水行，化氣為耗。主破壞重建，消耗極大但變革力最強。"
+    },
+    "star.tianxiang": {
+      "type": "star_vector",
+      "source_ids": ["star.tianxiang.001"],
+      "notes": "南斗星，水行，化氣為印。主輔佐禮儀文書，為宰相之星。"
+    },
+    "star.wenqu": {
+      "type": "star_vector",
+      "source_ids": ["star.wenqu.001"],
+      "notes": "北斗星，水行。與文昌對，主口才藝術。化忌主是非。"
+    },
+    "star.tiankui": {
+      "type": "star_vector",
+      "source_ids": ["star.tiankui.001"],
+      "notes": "南斗星，日間貴人。主科甲晉升逢凶化吉。與天鉞為一對。"
+    },
+    "star.tianyue": {
+      "type": "star_vector",
+      "source_ids": ["star.tianyue.001"],
+      "notes": "南斗星，夜間貴人。主科甲晉升逢凶化吉。與天魁為一對。"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "status": "stable",
+  "version": "2026-03-19",
+  "mechanisms": {
+    "neg.limit_collision": {
+      "confidence": "high",
+      "trigger_stack_family": "limit_layers",
+      "amplifier_families": [
+        "trap_spaces",
+        "injury_env",
+        "mourning_signals",
+        "blade_malefics",
+        "void_blockers"
+      ],
+      "branches": {
+        "fatal": {
+          "description": "多層限運疊加，且同時命中強兇放大器，結果落到死亡、破敗、名格崩潰。",
+          "minimum_signals": 3,
+          "preferred_terms": ["天傷", "天使", "天羅", "地網", "白虎", "喪門", "天哭", "空劫", "羊陀"],
+          "example_cases": ["case.quanshu.v4.001", "case.quanshu.v4.009", "case.quanshu.v4.019", "case.quanshu.v4.020", "case.quanshu.v4.023"]
+        },
+        "nonfatal": {
+          "description": "有兇觸發，但暫時只表現為刑傷、兇應、名格受損，未直接落到夭亡。",
+          "minimum_signals": 2,
+          "preferred_terms": ["天空", "地劫", "流羊", "寅申限", "刑傷"],
+          "example_cases": ["case.quanshu.v4.025", "case.quanshu.v4.028"]
+        },
+        "delayed_success": {
+          "description": "前期被限步與兇曜壓制，後期才發達，屬先抑後揚分支。",
+          "minimum_signals": 2,
+          "preferred_terms": ["先貧後富", "先抑後揚", "三十五後方得遂志", "三十六後遂志", "羊鈴地劫虛絕"],
+          "example_cases": ["case.quanshu.v4.013", "case.quanshu.v4.026"]
+        },
+        "structural_deficit": {
+          "description": "不是高格翻盤，而是本體先天不足，如無正曜、帶空、怯劫。",
+          "minimum_signals": 2,
+          "preferred_terms": ["無正曜", "帶空", "怯劫", "主體缺位"],
+          "example_cases": ["case.quanshu.v4.029"]
+        }
+      }
+    },
+    "neg.break_wealth_flow": {
+      "confidence": "medium_high",
+      "raw_support": ["formation.ludaomadao.001", "formation.lumajiaochi.001", "formation.lumajiaochi.002", "formation.maluokongwang.001", "star.tianma.002", "quanshu.v3.tanxing.001"],
+      "core_terms": ["祿存", "天馬"],
+      "disruptor_families": ["void_blockers", "mobility_breakers"],
+      "fallback_terms": ["空亡", "天空", "截空", "空劫", "沉馬", "馬頭帶箭"],
+      "status": "raw_strong_case_weak",
+      "notes": "direct raw 已明顯增強，但現有案例多為限運重疊型，尚缺完整祿馬受阻純案例。"
+    }
+  }
+}

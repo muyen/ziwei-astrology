@@ -1,0 +1,32 @@
+{
+  "status": "stable",
+  "version": "2026-03-19",
+  "modes": {
+    "research": {
+      "required_sections": ["原文", "抽取", "推論", "source_ids"],
+      "citation_mode": "required",
+      "uncertainty_policy": "must_state",
+      "fallback_policy": "return_to_raw_when_unresolved",
+      "allowed_inference": true
+    },
+    "chart_reading": {
+      "required_sections": ["結論", "依據", "confidence"],
+      "optional_sections": ["source_ids", "推論"],
+      "citation_mode": "preferred",
+      "uncertainty_policy": "must_state_when_material",
+      "fallback_policy": "return_to_raw_when_low_confidence",
+      "allowed_inference": true
+    }
+  },
+  "shared_rules": {
+    "language": "zh-Hant",
+    "must_distinguish_layers": ["原文", "抽取", "推論"],
+    "must_not_overstate_certainty": true,
+    "when_to_show_source_ids": [
+      "research mode always",
+      "chart_reading when conflict exists",
+      "chart_reading when low confidence",
+      "chart_reading when user asks for citations"
+    ]
+  }
+}

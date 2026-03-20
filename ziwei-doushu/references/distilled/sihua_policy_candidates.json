@@ -1,0 +1,37 @@
+{
+  "default_policy": "raw_first",
+  "status": "stable",
+  "groups": {
+    "sihua.wu": {
+      "selected_version": "wu.quanshu",
+      "claim": "貪狼祿 太陰權 右弼科 天機忌",
+      "confidence": "medium_high",
+      "score": 0.721,
+      "supported_by": ["lyric.sihua.002"],
+      "alternatives": ["wu.north"],
+      "notes": "raw 支撐較強；右弼新增 raw 後，與壬左輔科的輔弼對稱更可解釋"
+    },
+    "sihua.geng": {
+      "selected_version": "geng.raw_koujue",
+      "claim": "太陽祿 武曲權 太陰科 天同忌",
+      "confidence": "medium",
+      "score": 0.691,
+      "supported_by": ["lyric.sihua.003"],
+      "alternatives": [
+        "geng.quanshu_compare",
+        "geng.zhongzhou",
+        "geng.north"
+      ],
+      "notes": "目前唯一有 primary raw 的版本；太陰新增 raw 後，太陰科更可解釋，但庚天府科仍待補直接四化 raw"
+    },
+    "sihua.ren": {
+      "selected_version": "ren.quanshu",
+      "claim": "天梁祿 紫微權 左輔科 武曲忌",
+      "confidence": "medium_high",
+      "score": 0.75,
+      "supported_by": ["lyric.sihua.004", "star.wuqu.003"],
+      "alternatives": ["ren.north"],
+      "notes": "raw 支撐與星曜職司相容性較強；左輔新增 raw 後，左輔科的輔佐與大貴語義更明確"
+    }
+  }
+}

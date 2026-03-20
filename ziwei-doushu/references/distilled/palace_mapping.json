@@ -1,0 +1,88 @@
+{
+  "status": "stable",
+  "palaces": {
+    "命宮": {
+      "aliases": ["樞紐", "先天", "我"],
+      "role": "主體核心",
+      "linked_axes": ["身宮", "財帛宮", "官祿宮", "遷移宮"],
+      "confidence": "high"
+    },
+    "兄弟宮": {
+      "aliases": ["合夥", "財之田", "成就"],
+      "role": "關係協作與家內資源結構",
+      "linked_axes": ["田宅宮"],
+      "derived_events": ["家內開銷", "存款", "協作關係"],
+      "confidence": "high"
+    },
+    "夫妻宮": {
+      "aliases": ["配偶", "事業推手", "感情"],
+      "role": "親密關係與事業牽引",
+      "linked_axes": ["官祿宮"],
+      "derived_events": ["配偶影響", "家庭牽動事業"],
+      "confidence": "high"
+    },
+    "子女宮": {
+      "aliases": ["晚輩", "合夥", "性", "創意"],
+      "role": "後代與延續輸出",
+      "linked_axes": ["對宮", "三方四正"],
+      "derived_events": ["子女多寡", "性別傾向", "刑剋", "招祀子"],
+      "confidence": "medium_high"
+    },
+    "財帛宮": {
+      "aliases": ["現金流", "賺錢觀", "求財"],
+      "role": "資源流與變現能力",
+      "linked_axes": ["命宮", "官祿宮", "田宅宮"],
+      "derived_events": ["財源根本", "守財", "現金流"],
+      "confidence": "high"
+    },
+    "疾厄宮": {
+      "aliases": ["深層意識", "隱憂", "病竈"],
+      "role": "疾病與隱性風險",
+      "linked_axes": ["命宮"],
+      "derived_events": ["災少災多", "暗疾", "勞傷", "心氣疾", "瘋疾"],
+      "confidence": "medium_high"
+    },
+    "遷移宮": {
+      "aliases": ["外緣", "社會形象", "出外"],
+      "role": "外部世界與流動場域",
+      "linked_axes": ["命宮", "財帛宮", "官祿宮"],
+      "derived_events": ["出外貴人", "在外生財", "不安靜", "流蕩天涯"],
+      "confidence": "high"
+    },
+    "交友宮": {
+      "aliases": ["流量", "羣眾", "部屬", "奴僕宮"],
+      "role": "羣體網絡與部屬系統",
+      "linked_axes": ["奴僕系統"],
+      "derived_events": ["得力部屬", "背主逃走", "欠力", "成行"],
+      "confidence": "medium_high"
+    },
+    "官祿宮": {
+      "aliases": ["行為表現", "社會地位", "學業"],
+      "role": "功名職業與外顯成就",
+      "linked_axes": ["命宮", "財帛宮", "夫妻宮"],
+      "derived_events": ["封侯", "貴顯", "名利兩全", "文武為良"],
+      "confidence": "high"
+    },
+    "田宅宮": {
+      "aliases": ["財庫", "家族", "實體產業"],
+      "role": "資產家宅與祖業",
+      "linked_axes": ["兄弟宮", "財帛宮"],
+      "derived_events": ["祖業", "家產", "財庫"],
+      "confidence": "medium"
+    },
+    "福德宮": {
+      "aliases": ["精神享受", "因果", "抗壓"],
+      "role": "內在福分與承壓結構",
+      "linked_axes": ["身宮"],
+      "derived_events": ["精神享受", "生活品質", "抗壓"],
+      "confidence": "high"
+    },
+    "父母宮": {
+      "aliases": ["上司", "文書", "法律", "官非"],
+      "role": "上位者與制度系統",
+      "linked_axes": ["命宮"],
+      "derived_events": ["刑剋", "庇蔭", "制度壓力", "文書官非"],
+      "confidence": "medium"
+    }
+  }
+}

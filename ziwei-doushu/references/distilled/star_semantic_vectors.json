@@ -1,0 +1,160 @@
+{
+  "status": "stable",
+  "version": "2026-03-19",
+  "scale": "0-3",
+  "axes": [
+    "authority",
+    "wealth",
+    "literary",
+    "mobility",
+    "support",
+    "disruption",
+    "risk",
+    "stability",
+    "transformation"
+  ],
+  "stars": {
+    "紫微": {
+      "source_ids": ["star.ziwei.001", "star.ziwei.002", "star.ziwei.003"],
+      "vector": {"authority": 3, "wealth": 1, "literary": 1, "mobility": 0, "support": 1, "disruption": 0, "risk": 1, "stability": 2, "transformation": 1},
+      "tags": ["帝星", "領導", "尊貴"]
+    },
+    "天機": {
+      "source_ids": ["star.tianji.001", "star.tianji.002", "star.tianji.003"],
+      "vector": {"authority": 0, "wealth": 0, "literary": 2, "mobility": 2, "support": 1, "disruption": 1, "risk": 1, "stability": 0, "transformation": 3},
+      "tags": ["智慧", "變動", "善謀"]
+    },
+    "太陽": {
+      "source_ids": ["star.taiyang.001", "star.taiyang.002", "star.taiyang.003"],
+      "vector": {"authority": 3, "wealth": 1, "literary": 1, "mobility": 2, "support": 2, "disruption": 1, "risk": 1, "stability": 1, "transformation": 1},
+      "tags": ["官祿", "外顯", "散發"]
+    },
+    "武曲": {
+      "source_ids": ["star.wuqu.001", "star.wuqu.002", "star.wuqu.003"],
+      "vector": {"authority": 2, "wealth": 3, "literary": 0, "mobility": 2, "support": 0, "disruption": 1, "risk": 1, "stability": 2, "transformation": 1},
+      "tags": ["財星", "剛毅", "行動力"]
+    },
+    "天同": {
+      "source_ids": ["star.tong.001"],
+      "vector": {"authority": 0, "wealth": 0, "literary": 0, "mobility": 0, "support": 2, "disruption": 0, "risk": 0, "stability": 2, "transformation": 1},
+      "tags": ["福星", "和諧", "福德"]
+    },
+    "廉貞": {
+      "source_ids": ["star.lianzhen.001"],
+      "vector": {"authority": 2, "wealth": 0, "literary": 0, "mobility": 1, "support": 0, "disruption": 2, "risk": 2, "stability": 1, "transformation": 2},
+      "tags": ["行政", "囚", "感性"]
+    },
+    "太陰": {
+      "source_ids": ["star.taiyin.001", "star.taiyin.002", "star.taiyin.003", "star.taiyin.004"],
+      "vector": {"authority": 0, "wealth": 3, "literary": 1, "mobility": 0, "support": 2, "disruption": 0, "risk": 1, "stability": 2, "transformation": 1},
+      "tags": ["收藏", "田宅", "柔美"]
+    },
+    "天府": {
+      "source_ids": ["star.tianfu.001", "star.tianfu.002", "star.tianfu.003", "star.tianfu.004"],
+      "vector": {"authority": 2, "wealth": 3, "literary": 0, "mobility": 0, "support": 3, "disruption": 0, "risk": 0, "stability": 3, "transformation": 0},
+      "tags": ["財庫", "穩重", "保守"]
+    },
+    "文昌": {
+      "source_ids": ["star.wenchang.001", "star.wenchang.002"],
+      "vector": {"authority": 0, "wealth": 0, "literary": 3, "mobility": 0, "support": 1, "disruption": 1, "risk": 0, "stability": 1, "transformation": 1},
+      "tags": ["文曜", "科甲", "條理"]
+    },
+    "左輔": {
+      "source_ids": ["star.zuofu.001", "star.zuofu.002"],
+      "vector": {"authority": 1, "wealth": 1, "literary": 1, "mobility": 0, "support": 3, "disruption": 0, "risk": 0, "stability": 2, "transformation": 1},
+      "tags": ["輔星", "降福", "文武大貴"]
+    },
+    "右弼": {
+      "source_ids": ["star.youbi.001", "star.youbi.002"],
+      "vector": {"authority": 1, "wealth": 1, "literary": 2, "mobility": 0, "support": 3, "disruption": 0, "risk": 0, "stability": 2, "transformation": 1},
+      "tags": ["輔星", "文墨", "財官雙美"]
+    },
+    "祿存": {
+      "source_ids": ["star.lucun.001", "star.lucun.002", "star.lucun.003"],
+      "vector": {"authority": 0, "wealth": 3, "literary": 0, "mobility": 1, "support": 2, "disruption": 0, "risk": 1, "stability": 2, "transformation": 0},
+      "tags": ["財源", "祿", "流動資源"]
+    },
+    "天馬": {
+      "source_ids": ["star.tianma.001", "star.tianma.002"],
+      "vector": {"authority": 0, "wealth": 1, "literary": 0, "mobility": 3, "support": 0, "disruption": 1, "risk": 1, "stability": 0, "transformation": 2},
+      "tags": ["驛馬", "遷動", "速度"]
+    },
+    "擎羊": {
+      "source_ids": ["star.qingyang.001", "star.qingyang.002"],
+      "vector": {"authority": 0, "wealth": 0, "literary": 0, "mobility": 1, "support": 0, "disruption": 3, "risk": 3, "stability": 0, "transformation": 1},
+      "tags": ["鋒刃", "切割", "刑傷"]
+    },
+    "陀羅": {
+      "source_ids": ["star.tuoluo.001", "star.tuoluo.002"],
+      "vector": {"authority": 0, "wealth": 0, "literary": 0, "mobility": 0, "support": 0, "disruption": 2, "risk": 2, "stability": 0, "transformation": 1},
+      "tags": ["拖滯", "障礙", "暗耗"]
+    },
+    "火星": {
+      "source_ids": ["star.huoxing.001", "star.huoxing.002"],
+      "vector": {"authority": 0, "wealth": 0, "literary": 0, "mobility": 1, "support": 0, "disruption": 3, "risk": 3, "stability": 0, "transformation": 2},
+      "tags": ["暴發", "突變", "災厄"]
+    },
+    "鈴星": {
+      "source_ids": ["star.lingxing.001", "star.lingxing.002"],
+      "vector": {"authority": 0, "wealth": 0, "literary": 0, "mobility": 0, "support": 0, "disruption": 3, "risk": 3, "stability": 0, "transformation": 2},
+      "tags": ["驚擾", "突發", "凶煞"]
+    },
+    "空劫": {
+      "source_ids": ["star.kongjie.001", "star.kongjie.002"],
+      "vector": {"authority": 0, "wealth": 0, "literary": 0, "mobility": 0, "support": 0, "disruption": 3, "risk": 2, "stability": 0, "transformation": 1},
+      "tags": ["落空", "虛耗", "破財"]
+    },
+    "巨門": {
+      "source_ids": ["star.jumen.001"],
+      "vector": {"authority": 0, "wealth": 0, "literary": 1, "mobility": 0, "support": 0, "disruption": 2, "risk": 2, "stability": 0, "transformation": 1},
+      "tags": ["口舌", "暗", "是非"]
+    },
+    "天梁": {
+      "source_ids": ["star.tianliang.001"],
+      "vector": {"authority": 1, "wealth": 0, "literary": 1, "mobility": 0, "support": 3, "disruption": 0, "risk": 1, "stability": 2, "transformation": 1},
+      "tags": ["蔭星", "教化", "逢凶化吉"]
+    },
+    "貪狼": {
+      "source_ids": ["lyric.sihua.002", "star.tanlang.001"],
+      "vector": {"authority": 1, "wealth": 2, "literary": 1, "mobility": 2, "support": 0, "disruption": 1, "risk": 1, "stability": 0, "transformation": 3},
+      "tags": ["桃花", "慾望", "多才多藝"],
+      "notes": "北斗星，木行，化氣為善（陷則為惡）。主桃花與慾望，亦主才藝變化。戊幹化祿主星。"
+    },
+    "七殺": {
+      "source_ids": ["lyric.gusui.001", "star.qisha.001"],
+      "vector": {"authority": 3, "wealth": 0, "literary": 0, "mobility": 2, "support": 0, "disruption": 2, "risk": 2, "stability": 0, "transformation": 2},
+      "tags": ["將星", "武勇", "孤克"],
+      "notes": "南斗星，火金行，化氣為權。主武勇決斷，帶孤克之性。廟旺為大將之才，陷落則兇暴。"
+    },
+    "破軍": {
+      "source_ids": ["lyric.sihua.001", "quanshu.v2.caibo.003", "star.pojun.001"],
+      "vector": {"authority": 1, "wealth": 0, "literary": 0, "mobility": 3, "support": 0, "disruption": 3, "risk": 2, "stability": 0, "transformation": 3},
+      "tags": ["耗星", "開創", "破壞重建"],
+      "notes": "北斗星，水行，化氣為耗。主破壞與重建，先敗後成。消耗極大但變革力最強。"
+    },
+    "天相": {
+      "source_ids": ["star.tianxiang.001"],
+      "vector": {"authority": 1, "wealth": 1, "literary": 1, "mobility": 0, "support": 3, "disruption": 0, "risk": 0, "stability": 2, "transformation": 0},
+      "tags": ["印星", "輔佐", "禮儀"],
+      "notes": "南斗星，水行，化氣為印。主輔佐、禮儀、文書。為宰相之星，依附主星而發。"
+    },
+    "文曲": {
+      "source_ids": ["star.wenqu.001"],
+      "vector": {"authority": 0, "wealth": 0, "literary": 3, "mobility": 0, "support": 1, "disruption": 1, "risk": 1, "stability": 0, "transformation": 2},
+      "tags": ["文曜", "口才", "藝術"],
+      "notes": "北斗星，水行。與文昌對，主口才藝術。文昌偏正統科甲，文曲偏才藝口舌。化忌主是非。"
+    },
+    "天魁": {
+      "source_ids": ["star.tiankui.001"],
+      "vector": {"authority": 1, "wealth": 0, "literary": 1, "mobility": 0, "support": 3, "disruption": 0, "risk": 0, "stability": 1, "transformation": 0},
+      "tags": ["日貴人", "科甲", "逢凶化吉"],
+      "notes": "南斗星，日間貴人。主科甲、晉升、逢凶化吉。與天鉞為一對，分日夜值守。"
+    },
+    "天鉞": {
+      "source_ids": ["star.tianyue.001"],
+      "vector": {"authority": 1, "wealth": 0, "literary": 1, "mobility": 0, "support": 3, "disruption": 0, "risk": 0, "stability": 1, "transformation": 0},
+      "tags": ["夜貴人", "科甲", "逢凶化吉"],
+      "notes": "南斗星，夜間貴人。主科甲、晉升、逢凶化吉。與天魁為一對，分日夜值守。"
+    }
+  }
+}
