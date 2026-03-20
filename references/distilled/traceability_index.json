@@ -50,7 +50,7 @@
     },
     "void_blockers": {
       "type": "term_family",
-      "source_ids": ["quanshu.v3.tanxing.001", "quanshu.v3.dayun.003", "lead.jiekong.001", "lead.jiekong.002", "lead.kongwang.001"],
+      "source_ids": ["quanshu.v3.tanxing.001", "quanshu.v3.dayun.003"],
       "case_support": ["case.quanshu.v4.009", "case.quanshu.v4.020", "case.quanshu.v4.024"]
     },
     "structural_deficit": {
